@@ -532,6 +532,7 @@ editPage' params = do
   cfg <- getConfig
   let editForm = gui (base' ++ urlForPage page) ! [identifier "editform"] <<
                    [ sha1Box
+				   , p ! [ theclass "editable" ] << noHtml
                    , textarea ! (readonly ++ [cols "80", name "editedText",
                                   identifier "editedText"]) << raw
                    , br
@@ -549,7 +550,7 @@ editPage' params = do
                               value "Preview" ]
                    , thediv ! [ identifier "previewpane" ] << noHtml
                    ]
-  let pgScripts' = ["preview.js"]
+  let pgScripts' = ["preview.js", "hallo-min.js", "markdown/showdown.js", "markdown/to-markdown.js", "markdown/editor.js", "rangy-core.js"]
   let pgScripts'' = case mathMethod cfg of
        JsMathScript -> "jsMath/easy/load.js" : pgScripts'
        MathML       -> "MathMLinHTML.js" : pgScripts'

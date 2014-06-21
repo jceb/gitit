@@ -13,6 +13,9 @@
     $else$
     <link href="$base$/css/custom.css" rel="stylesheet" media="screen, projection" type="text/css" />
     <link href="$base$/css/print.css" rel="stylesheet" media="print" type= "text/css" />
+    <link href="$base$/css/hallo/hallo.css" rel="stylesheet" type= "text/css" />
+    <link href="$base$/css/hallo/fontawesome/css/font-awesome.css" charset="utf-8" rel="stylesheet" type= "text/css" />
+    <link href="$base$/css/hallo/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" type= "text/css" />
     $endif$
     <!--[if IE]><link href="$base$/css/ie.css" rel="stylesheet" media="screen, projection" type="text/css" /><![endif]-->
   </head>
